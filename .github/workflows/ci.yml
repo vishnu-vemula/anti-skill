@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate skills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate skill frontmatter, sizes, banned patterns, README sync
+        run: python scripts/validate_skills.py --strict --check-readme
+
+      - name: Self-test context estimator
+        run: python scripts/context_estimate.py --self-test
+
+      - name: Estimate skill sizes (budget hygiene)
+        run: python scripts/context_estimate.py skills
+
+  markdown:
+    name: Lint markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/markdownlint-cli2-action@v17
+        with:
+          config: "# default config; relax line-length for prose-heavy docs"
+          globs: |
+            README.md
+            CHANGELOG.md
+            CONTRIBUTING.md
+            SECURITY.md
+            research/*.md
+            examples/*.md
+            skills/**/SKILL.md

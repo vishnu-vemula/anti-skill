@@ -1,0 +1,12 @@
+{
+  "name": "antiskill",
+  "version": "1.0.0",
+  "description": "AntiSkill - engineering discipline skills for AI coding agents: context window budgeting, change precautions, and evidence-based verification.",
+  "author": {
+    "name": "AntiSkill Contributors"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/YOUR_USERNAME/antiskill",
+  "repository": "https://github.com/YOUR_USERNAME/antiskill",
+  "keywords": ["skills", "agent", "ai", "claude", "codex", "cursor", "engineering", "best-practices", "context-window", "safety"]
+}

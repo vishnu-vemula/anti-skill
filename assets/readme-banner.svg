@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="AntiSkill - the anti-slop engineering framework for AI agents">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0d10"/>
+      <stop offset="100%" stop-color="#14181d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e5484d"/>
+      <stop offset="100%" stop-color="#f5a524"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="6" rx="3" fill="url(#accent)"/>
+  <text x="80" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="72" font-weight="700" fill="#f4f6f8">ANTI<span fill="#e5484d">SKILL</span></text>
+  <text x="84" y="205" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" fill="#9aa4b2">gives your AI good judgment.</text>
+  <text x="84" y="237" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" fill="#9aa4b2">stops the AI from shipping guesswork.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#c7cedb">
+    <text x="860" y="105">[x] context budgeted</text>
+    <text x="860" y="135">[x] blast radius checked</text>
+    <text x="860" y="165">[x] diff minimized</text>
+    <text x="860" y="195">[x] rollback stated</text>
+    <text x="860" y="225">[x] evidence shown</text>
+  </g>
+  <text x="84" y="285" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#5f6b7a">engineering discipline skills for Claude Code, Codex, Cursor, and any agent that reads SKILL.md</text>
+</svg>

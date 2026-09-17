@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build output
+dist/
+build/
+out/
+.next/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets / env (never commit)
+.env
+.env.*
+*.pem
+*.key
+
+# Logs / caches
+*.log
+.coverage
+.ruff_cache/

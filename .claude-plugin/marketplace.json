@@ -1,0 +1,13 @@
+{
+  "owner": {
+    "name": "AntiSkill Contributors"
+  },
+  "plugins": [
+    {
+      "name": "antiskill",
+      "source": "./",
+      "description": "AntiSkill - the anti-slop engineering framework for AI agents. Context budgeting, change precautions, verification discipline.",
+      "version": "1.0.0"
+    }
+  ]
+}
